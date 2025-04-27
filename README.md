@@ -16,7 +16,7 @@
 
 1. Клонировать репозиторий и перейти в папку проекта:  
    ```bash
-   git clone https://github.com/ВАШ_ЛОГИН/todo-app.git
+   git clone https://github.com/Grigoriy-V/todo-app.git
    cd todo-app
    ```
 2. Настроить переменные окружения для бэкенда:  
