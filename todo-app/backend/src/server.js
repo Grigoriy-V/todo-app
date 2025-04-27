@@ -1,0 +1,10 @@
+require('dotenv').config();
+const express=require('express');
+const cors=require('cors');
+const connectDB=require('./config');
+connectDB();
+const app=express();app.use(cors(),express.json());
+app.use('/api/auth', require('./routes/authRoutes'));
+app.use('/api/todos', require('./routes/todoRoutes'));
+app.use((e,req,res)=>res.status(res.statusCode===200?500:res.statusCode).json({message:e.message}));
+app.listen(process.env.PORT||5000,()=>console.log('Server started')); 
