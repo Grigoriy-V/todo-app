@@ -102,6 +102,3 @@ Authorization: Bearer <token>
 
 ---
 
-## ⚖️ Лицензия
-
-MIT © Ваше Имя
